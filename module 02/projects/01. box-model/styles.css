@@ -1,0 +1,18 @@
+.parent {
+    width: 400px;
+    height: 300px;
+    background-color: lightblue;
+    padding: 40px;
+    border: 20px solid black;
+    margin: 60px;
+    overflow-x: auto;
+
+}
+
+.child {
+    width: 80%;
+    height: 50%;
+    background-color: lightcoral;
+    border: 20px solid brown;
+
+}
