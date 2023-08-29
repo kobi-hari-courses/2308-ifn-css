@@ -3,7 +3,13 @@
 ## Projects
 |     |     |
 | --- | --- |
-| [fun-with-selectos](./projects/fun-with-selectors/) | CSS Selectors in Depth | 
+| [basic selectors](./projects/01.%20selectors/) | CSS Basic 
+Selectors | 
+| [attribute selectors](./projects/02.%20attribute-selectors/) | Attribute Selectors | 
+| [combinators](./projects/03.%20combinators/) | Combinators | 
+| [pseudo classes](./projects/04.%20pseudo-class/) | Pseudo classes using `:` | 
+| [pseudo elements](./projects/05.%20pseudo-element/) | Pseudo elements using `::` | 
+| [specifity](./projects/06.%20specifity/) | Selector Specificy Rules | 
 
 
 ## Introduction to selectors
