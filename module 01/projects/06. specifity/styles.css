@@ -1,0 +1,29 @@
+#bla {
+    color: yellow;
+}
+
+
+li#bla.a.b {
+
+}
+
+.a[type="text"][foo="bar"] {
+
+}
+
+.a.b { color: purple;}
+
+.a {color: red;}
+
+.b {color: green;}
+
+* {color: teal;}
+
+ul li {color: brown;}
+
+li {color: yellow;}
+
+body > ul li + li {color: lime}
+
+li:first-child {color: blue;}
+

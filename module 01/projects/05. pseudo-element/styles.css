@@ -1,0 +1,67 @@
+p::first-letter {
+    font-size: 3em;
+    color: purple;
+}
+
+p::first-line {
+    text-decoration: red underline;
+}
+
+p::selection {
+    color: pink;
+    background-color: lightgoldenrodyellow;
+}
+
+li::marker {
+    content: '-';
+    color: red;
+}
+
+.speical {
+}
+
+.special::before {
+    content: '[[[';
+    color: magenta;
+}
+
+.special::after {
+    content: ']]]';
+    color: magenta;
+}
+
+[explain] {
+    background-color: rgba(255, 255, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+}
+
+[explain]:hover::before {
+    position: absolute;
+    top: -1em;
+    left: -10px;
+    background-color: yellow;
+    content: attr(explain);
+    border: 2px solid brown;
+}
+
+
+a[href]::after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+a[href$=".pdf"]::after {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a[href$=".docx"]::after {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1481px-Google_Docs_logo_%282014-2020%29.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
