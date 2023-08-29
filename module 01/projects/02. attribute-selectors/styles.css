@@ -1,0 +1,47 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[bla] {
+    border: 1px solid red;
+}
+
+[type="text"] {
+    background-color: pink;
+}
+
+[hint*="please"] {
+    border-right: 10px solid green;
+
+}
+
+[hint^="please"] {
+    border-left: 10px solid lime;
+}
+
+[hint$="please"] {
+    border-left: 10px solid magenta;
+}
+
+[conditions~="required"]::before {
+    content: '*';
+    color: red;
+}
+
+[annotations]::after {
+    position: relative;
+}
+
+[annotations]:hover::after {
+    content: attr(annotations);
+    display: absolute;
+    top: -10px;
+    left: 0px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+[currency="usd"]::after {
+    content: '$';
+    color: blue;
+}

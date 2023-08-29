@@ -1,0 +1,23 @@
+h1 {
+    color: green;
+    text-decoration: red underline;
+}
+
+.x {
+    background-color: yellow;
+}
+
+.y {
+    border-left: 4px solid brown;
+}
+
+#fifth {
+    text-decoration: green underline;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
