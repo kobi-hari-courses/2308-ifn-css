@@ -9,27 +9,33 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: flex-start;
     height: 100%;
-    width: 100%;
-    align-items: stretch;
-    justify-content: flex-start;
+    width: 100%;    
 }
 
 .child {
     border: 1px solid gray;
-    margin: 2px;
+    font-size: 2em;
+    padding: 8px;
+    flex-basis: 130px;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .child:nth-child(4) {
-    align-self: flex-start;
+    background-color: pink;
+    flex-shrink: 2;
+    order: -1;
 }
 
 .child:nth-child(5) {
-    align-self: flex-end;
 }
 
 .child:nth-child(6) {
-    align-self: center;
+    background-color: lime;
+    flex-shrink: 1;
+    order: -2;
 }
 
 body {
