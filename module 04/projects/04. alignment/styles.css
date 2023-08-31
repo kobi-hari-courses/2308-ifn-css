@@ -15,6 +15,15 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 200px);
+
+    justify-content: center;
+    align-content: end;
+
+    justify-items: stretch;
+    align-items: stretch;
+
 }
 
 .grid-item {
@@ -27,12 +36,19 @@ body {
 }
 
 .grid-item:nth-child(3) {
+    background-color: pink;
+    align-self: start;
 }
 
 .grid-item:nth-child(4) {
+    background-color: yellow;
+    justify-self: end;
 }
 
 .grid-item:nth-child(5) {
+    background-color: lime;
+    justify-self: center;
+    align-self: center;
 }
 
 
