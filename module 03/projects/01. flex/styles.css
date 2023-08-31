@@ -1,0 +1,43 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+}
+
+.parent {
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.child {
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.child:nth-child(4) {
+    align-self: flex-start;
+}
+
+.child:nth-child(5) {
+    align-self: flex-end;
+}
+
+.child:nth-child(6) {
+    align-self: center;
+}
+
+body {
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #parent {
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            display:flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; 
+            
+        }
+        #parent>div {
+            width: 60px;
+            height: 60px;
+            flex-basis: 60px;
+            background-color: red;
+            border: 1px solid darkred;
+            margin: 10px; 
+            flex-shrink: 0;
+            flex-grow: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parent>div:nth-child(4) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>    
+</body>
+</html>
+
