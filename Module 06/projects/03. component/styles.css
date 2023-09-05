@@ -9,17 +9,35 @@ html, body {
     box-sizing: border-box;    
 }
 
+@property --theme-hue {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
 .special {
-    --theme-hue: 120;
+    --theme-hue: 180;
+    transition: 1s;
+}
+
+.special:hover {
+    --theme-hue: 300;
 }
 
 .fancy {
-    --theme-hue: 300;
+    border: 4px solid gray;
+    --theme-hue: 240;
 }
 
 body {
     padding: 50px;
     position: relative;
+}
+
+@property --p-theme-hue {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
 }
 
 app-kobi {
@@ -28,8 +46,8 @@ app-kobi {
     height: 200px;
     display: flex;
     flex-direction: column;
-    border: 3px solid hsl(var(--p-theme-hue), 80%, 30%);
     margin: 20px;
+    border: 3px solid hsl(var(--p-theme-hue), 80%, 30%);
     color: hsl(var(--p-theme-hue), 100%, 20%);
 }
 
@@ -39,8 +57,7 @@ app-kobi .header {
     align-items: center;
     height: 40px;
     padding: 4px;
-    background: hsl(var(--p-theme-hue), 27%, 50%);
-
+    background-color: hsl(var(--p-theme-hue), 27%, 70%);
 }
 
 app-kobi .content {

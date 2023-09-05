@@ -10,7 +10,6 @@ html, body {
 }
 
 :root {
-    --kobi: green;
 }
 
 body {
@@ -33,12 +32,19 @@ body {
 }
 
 .colors div {
-    --hue: 240;
+    --hue: 120;
     --saturation: 40%;
     --lightness: 0%;
-    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
 
-    display: flex;
+    --bs-offset: 2px;
+    --bs-blur: calc(var(--bs-offset) * 1.5);
+    --bs-spread: 0px;
+    --bs-color: gray;
+
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    box-shadow: var(--bs-offset) var(--bs-offset) var(--bs-blur) var(--bs-spread) var(--bs-color);
+
+    display: flex;    
     justify-content: center;
     align-items: center;    
 
@@ -50,66 +56,57 @@ body {
     transform: translate(0px, 0px);
 
 
-    --bs-offset: 2px;
-    --bs-offset-x: var(--bs-offset);
-    --bs-offset-y: var(--bs-offset);
-    --bs-blur: calc(var(--bs-offset) * 1.5);
-    --bs-spread: 0px;
-    --bs-color: gray;
-    box-shadow: var(--bs-offset-x) var(--bs-offset-y) var(--bs-blur) var(--bs-spread) var(--bs-color);
 }
 
 .colors div:nth-child(1) {
-    --lightness: 40%;
+    --lightness: 10%;
     --bs-offset: 1px;
 }
 
 .colors div:nth-child(2) {
-    --lightness: 45%;
-    --bs-offset: 3px;
+    --lightness: 20%;
+    --bs-offset: 2px;
 }
 
 .colors div:nth-child(3) {
+    --lightness: 30%;
+    --bs-offset: 3px;
+}
+
+.colors div:nth-child(4) {
+    --lightness: 40%;
+    --bs-offset: 4px;
+}
+
+.colors div:nth-child(5) {
     --lightness: 50%;
     --bs-offset: 5px;
 }
 
-.colors div:nth-child(4) {
-    --lightness: 55%;
-    --bs-offset: 7px;
-}
-
-.colors div:nth-child(5) {
-    --lightness: 60%;
-    --bs-offset: 9px;
-}
-
 .colors div:nth-child(6) {
-    --lightness: 65%;
-    --bs-offset: 11px;
+    --lightness: 60%;
+    --bs-offset: 6px;
 }
 
 .colors div:nth-child(7) {
     --lightness: 70%;
-    --bs-offset: 13px;
+    --bs-offset: 7px;
 }
 
 .colors div:nth-child(8) {
-    --lightness: 75%;
-    --bs-offset: 15px;
+    --lightness: 80%;
+    --bs-offset: 8px;
 }
 
 .colors div:nth-child(9) {
-    --lightness: 80%;
-    --bs-offset: 17px;
+    --lightness: 90%;
+    --bs-offset: 9px;
 }
 
 .colors div:nth-child(10) {
-    --lightness: 85%;
-    --bs-offset: 19px;
+    --lightness: 100%;
+    --bs-offset: 10px;
 }
 
 .colors div:hover {
-    --lightness: 100%;
-    --bs-blur: 20px;
 }

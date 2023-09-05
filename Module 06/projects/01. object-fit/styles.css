@@ -19,12 +19,13 @@ body {
 
 img {
   border: 3px solid black;
+  margin: 10px;
   border-radius: 5px;
   overflow: hidden;
 
-  height: 200px;
   width: 150px;
-  margin: 10px;
+  height: 200px;
+
 }
 
 div:nth-of-type(1) img {
@@ -58,44 +59,27 @@ div:nth-of-type(7) img {
   height: 450px;
 }
 
+div:nth-of-type(n + 8) img:nth-of-type(1) {    
+  object-fit: contain;
+}
+
+div:nth-of-type(n + 8) img:nth-of-type(2) {    
+  object-fit: cover;
+}
+
 div:nth-of-type(8) img {
-    object-position: top left;
-}
-
-div:nth-of-type(8) img:nth-of-type(1) {    
-    object-fit: contain;
-}
-
-div:nth-of-type(8) img:nth-of-type(2) {    
-    object-fit: cover;
+  object-position: top left;
 }
 
 div:nth-of-type(9) img {
-    object-position: 90% 80%;
-}
-
-div:nth-of-type(9) img:nth-of-type(1) {    
-    object-fit: contain;
-}
-
-div:nth-of-type(9) img:nth-of-type(2) {    
-    object-fit: cover;
-}
-
-
-div:nth-of-type(10) img {
-    object-position: 10px 40px;
-    transition: 1s;
+  object-position: bottom right;
 }
 
 div:nth-of-type(10) img:hover {
-    object-position: -10px -40px;
+  object-position: 20px -30px;
 }
 
-div:nth-of-type(10) img:nth-of-type(1) {    
-    object-fit: contain;
-}
-
-div:nth-of-type(10) img:nth-of-type(2) {    
-    object-fit: cover;    
+div:nth-of-type(10) img {
+  object-position: 0px 0px;
+  transition: 1s;  
 }
