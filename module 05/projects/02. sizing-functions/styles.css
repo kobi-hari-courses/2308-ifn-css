@@ -23,13 +23,13 @@ body {
     background: purple;
     grid-area: he;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     color: white;
 /* */
     padding: 0.25em;
-    font-size: 5vw;
-    padding: 4%;
+    font-size: clamp(20px, 5vw, 40px);
+    padding: clamp(15px, 4vw, 30px);
 }
 
 .menu {
@@ -42,11 +42,12 @@ body {
     background: rgb(62, 115, 212);
     height: 40px;
     margin: 4px;
-    width: 200px;
+    width: clamp(30%, 200px, 80%);
     flex-direction: row;
     align-items: center;
     color: white;
-    padding: 10px;
+    padding: calc(5px * var(--scale));
+    font-size: calc(1em * var(--scale));
 }
 
 .sidebar {
@@ -75,7 +76,7 @@ body {
 
 .main .col {
     background: lightskyblue;
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--scale));
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -84,5 +85,11 @@ body {
 
 .main .col:last-child {
     grid-column: -2;
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        --scale: 2;
+    }
 }
 

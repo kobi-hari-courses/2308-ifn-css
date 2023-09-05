@@ -47,3 +47,23 @@ body {
     grid-area: f;
 }
 
+@media only screen and (max-width: 400px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 1fr 120px 80px;
+        grid-template-areas: 
+        'h'
+        'm'
+        '.'
+        's'
+        'f'
+        ;
+    }   
+}
+
+@media only screen and (max-width: 200px) {
+    .menu {
+        display: none;
+    }
+}
+
