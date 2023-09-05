@@ -15,6 +15,7 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
 .grid-item {
@@ -23,11 +24,15 @@ body {
     align-items: center;
     font-size: 2em;
     border: 1px solid black;
-    border-radius: 20px;
-    height: 100px;
+    border-radius: 20px;    
+}
+
+.grid-item:nth-child(2n) {
+    background-color: lightgray;
 }
 
 .grid-item:nth-child(1) {
+    background-color: lime;
 }
 
 .grid-item:nth-child(2) {
@@ -49,5 +54,7 @@ body {
 }
 
 .grid-item:nth-child(8) {
+    background-color: pink;
+    grid-column: -2;
 }
 
