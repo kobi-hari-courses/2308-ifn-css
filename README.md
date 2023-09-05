@@ -16,3 +16,5 @@ Kobi Hari
     - [Exercise](./module%2004/exercises/README.md)
 5. [Position and Sizing](./module%2005/README.md)
     - [Exercise](./module%2005/exercises/README.md)
+6. [Variables and Tricks](./Module%2006/README.md)
+    - [Exercise](./Module%2006/exercises/README.md)
