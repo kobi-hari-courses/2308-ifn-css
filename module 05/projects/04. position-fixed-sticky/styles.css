@@ -39,9 +39,6 @@ section {
     background-color: rgb(221, 227, 237);;
     align-self: start;
     margin-top: -10px;    
-
-    position: sticky;
-    top: 30px;
 }
 
 p {
@@ -56,12 +53,9 @@ strong {
 .fancy {
     width: 100px;
     height: 200px;
-    bottom: 20px;
-    left: 40px;
     border: 1px solid gray;
     background-color: rgba(211, 211, 211, 0.511);
     padding: 10px;
-    position: fixed;
     z-index: 10;
     box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.526);;
 }

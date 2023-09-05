@@ -47,17 +47,3 @@ body {
     grid-area: f;
 }
 
-@media only screen and (max-width: 400px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr 120px 80px;
-        grid-template-areas: 
-        'h' 
-        'm' 
-        '.'
-        's'
-        'f' ;
-    }
-
-}
-
