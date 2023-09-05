@@ -1,4 +1,4 @@
-# Module 7 - Sizing and Position
+# Module 5 - Sizing and Position
 ## Media Queries
 * How to create a media query
 * How to modify the layout according to media properties
