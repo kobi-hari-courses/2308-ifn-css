@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -38,7 +39,9 @@ section {
     border-bottom: 1px solid rgb(152, 163, 184);
     background-color: rgb(221, 227, 237);;
     align-self: start;
-    margin-top: -10px;    
+    margin-top: -10px;  
+    position: sticky;
+    top: 0px;  
 }
 
 p {
@@ -58,6 +61,10 @@ strong {
     padding: 10px;
     z-index: 10;
     box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.526);;
+
+    position: fixed;
+    top: 20px;
+    inset-inline-start: 20px;
 }
 
 .fancy li {

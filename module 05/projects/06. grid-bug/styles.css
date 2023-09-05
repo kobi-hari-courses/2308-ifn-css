@@ -1,0 +1,41 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+.root {
+    background-color: lightgray;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    background-color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: span 2;
+}
+
+.content {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    overflow-y: auto;
+    background-color: pink;
+}
