@@ -1,0 +1,21 @@
+.icon-1 {
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    color: magenta;
+    transform: rotate(0deg);
+    transition: 1s;
+
+    &:hover {
+        transform: rotate(45deg);
+    }
+}
+
+.special {
+    color: green;
+    text-decoration: red underline;
+}
+
+h1 {
+    color: magenta;
+}

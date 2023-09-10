@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use 'theme';
+
+
+@include mat.core();
+
+@include theme.go(mat.$blue-palette, mat.$yellow-palette);
+
+.other{
+    @include theme.go(mat.$purple-palette, mat.$orange-palette);
+
+}
+
+h1 {
+    color: blue;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

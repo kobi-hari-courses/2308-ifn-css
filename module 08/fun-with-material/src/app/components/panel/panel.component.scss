@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--p-500);
+    border-radius: 2px;
+    margin: 10px;
+    
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: var(--p-50);
+        color: var(--p-800);
+    }
+
+    ::ng-deep h1 {
+        color: cyan;
+    }
+
+}
+
