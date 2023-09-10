@@ -1,0 +1,92 @@
+$bg: lightgreen;
+$list: (2, 3, 4, 5);
+$map: (2: red, 3: green, 4: yellow);
+$x: 10;
+
+$colors: ('red', 'green', 'orange');
+$double-x: $x *2;
+
+@function double($x) {
+    @return $x * 2;
+}
+
+@function power($base, $exponent) {
+    $result: 1;
+    @for $i from 1 through $exponent {
+        $result: $result * $base
+    }
+    @return $result;
+}
+
+$large-number: power(3, 6);
+@debug the value of large number is #{$large-number};
+
+
+@debug $double-x;
+@warn 'This is a warnning';
+
+$value: 5;
+
+@each $c in $colors {
+    .#{$c}-card {
+        color: #{$c};
+        border: 2px solid #{$c};
+    }
+}
+
+$sizes: (small: 5, medium: 10, large: 20);
+@each $k, $v in $sizes {
+    .#{$k}-panel {
+        font-size: #{$v}px;
+        padding: #{$v % 2}px;
+    }
+}
+
+@if ($value > 10) {
+    @warn $value;
+    @error #{$value} is too large
+}
+@else {
+    @debug #{$value} is ok;
+}
+
+:root {
+    @for $i from 10 through 20 {
+        --x-#{$i}: #{$i * 10px};
+    }    
+}
+
+@for $i from 1 through 3 {
+    .my-class-#{$i} {
+        border: 2px solid blue;
+    }
+}
+
+
+
+
+
+$small-int: 10;
+$class-name: kobi;
+$box-model-layer: padding;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: $bg;
+    border-width: #{$small-int*2}px;
+}
+
+.#{$class-name} {
+    background-color: lightgreen;
+}
+
+div::before {
+    #{$box-model-layer}-top: 20px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
