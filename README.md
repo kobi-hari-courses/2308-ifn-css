@@ -18,3 +18,4 @@ Kobi Hari
     - [Exercise](./module%2005/exercises/README.md)
 6. [Variables and Tricks](./Module%2006/README.md)
     - [Exercise](./Module%2006/exercises/README.md)
+7. [Sass and Scss](./module%2007/README.md)
