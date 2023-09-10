@@ -1,0 +1,10 @@
+@use 'sass:color';
+
+@mixin go($base, $prefix) {
+    --#{$prefix}-500: #{$base};
+    @for $i from 1 through 4 {
+        $level: 500 - ($i * 100);
+        --#{$prefix}-#{$level}: #{color.mix(white, $base, $i * 15%)};
+    }
+
+}

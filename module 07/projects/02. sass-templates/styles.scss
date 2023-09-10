@@ -1,0 +1,19 @@
+@mixin magenta-deco($color: magenta) {
+    border: 2px solid $color;
+    box-shadow: 2px 2px 2px $color;
+    color: $color;
+}
+
+.fancy {
+    @include magenta-deco(green); 
+}
+
+.documnet {
+    @include magenta-deco(blue); 
+    border-radius: 20px;
+}
+
+.x.y {
+    font-size: 50px;
+    @include magenta-deco(); 
+}

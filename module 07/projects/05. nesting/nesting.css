@@ -1,0 +1,47 @@
+:root {
+  --default-size: 20px;
+}
+
+.a {
+  --default-size: 20px;
+  background-color: white;
+  color: blue;
+}
+.a > .b {
+  color: black;
+}
+.a.b {
+  font-size: 10px;
+}
+.a.b:hover {
+  background-color: gray;
+}
+
+input[required]::before,
+textarea[required]::before,
+select[required]::before {
+  content: "*";
+}
+
+.a .x,
+.a .y,
+.a .z,
+.b .x,
+.b .y,
+.b .z,
+.c .x,
+.c .y,
+.c .z {
+  color: red;
+}
+
+div {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  border--small: 20px;
+  border--medium: 20px;
+  border--large: 20px;
+}
+
+/*# sourceMappingURL=nesting.css.map */

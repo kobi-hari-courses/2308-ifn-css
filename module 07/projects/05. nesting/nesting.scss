@@ -1,0 +1,59 @@
+@mixin vars() {
+  @if (& == null) {
+    :root {
+      --default-size: 20px;
+    }
+  } @else {
+    --default-size: 20px;
+  }
+}
+
+@debug &;
+
+@include vars();
+
+.a {
+  @include vars();
+  background-color: white;
+  color: blue;
+
+  > .b {
+    color: black;
+  }
+
+  &.b {
+    font-size: 10px;
+
+    @debug &;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+}
+
+input,
+textarea,
+select {
+  &[required]::before {
+    content: "*";
+  }
+}
+
+.a,
+.b,
+.c {
+  .x,
+  .y,
+  .z {
+    color: red;
+  }
+}
+
+div {
+  margin: {
+    top: 10px;
+    left: 20px;
+    right: 30px;
+  }
+}

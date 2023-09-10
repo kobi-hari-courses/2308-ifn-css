@@ -1,0 +1,8 @@
+@use 'x' as iks;
+@use 'y';
+
+.x {
+    background-color: blue;
+}
+
+@include iks.my-reset();

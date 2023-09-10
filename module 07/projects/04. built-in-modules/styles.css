@@ -1,0 +1,65 @@
+.clr-0 {
+  background-color: white;
+}
+
+.clr-1 {
+  background-color: #e6e6ff;
+}
+
+.clr-2 {
+  background-color: #ccccff;
+}
+
+.clr-3 {
+  background-color: #b3b3ff;
+}
+
+.clr-4 {
+  background-color: #9999ff;
+}
+
+.clr-5 {
+  background-color: #8080ff;
+}
+
+.clr-6 {
+  background-color: #6666ff;
+}
+
+.clr-7 {
+  background-color: #4d4dff;
+}
+
+.clr-8 {
+  background-color: #3333ff;
+}
+
+.clr-9 {
+  background-color: #1a1aff;
+}
+
+.clr-10 {
+  background-color: blue;
+}
+
+:root {
+  --p-0: white;
+  --p-1: #e6e6ff;
+  --p-2: #ccccff;
+  --p-3: #b3b3ff;
+  --p-4: #9999ff;
+  --p-5: #8080ff;
+  --p-6: #6666ff;
+  --p-7: #4d4dff;
+  --p-8: #3333ff;
+  --p-9: #1a1aff;
+  --p-10: blue;
+}
+
+.card {
+  background: var(--p-2);
+  color: var(--p-8);
+  border: 2px solid var(--p-10);
+}
+
+/*# sourceMappingURL=styles.css.map */

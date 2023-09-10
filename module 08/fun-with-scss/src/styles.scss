@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'theme';
+
+
+:root {
+    @include theme.go(blue, 'p');
+}
+
+.green-theme {
+    @include theme.go(green, 'p');
+}
+
+.blue-theme {
+    @include theme.go(blue, 'p');
+}

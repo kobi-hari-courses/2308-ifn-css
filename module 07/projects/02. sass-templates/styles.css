@@ -1,0 +1,21 @@
+.fancy {
+  border: 2px solid green;
+  box-shadow: 2px 2px 2px green;
+  color: green;
+}
+
+.documnet {
+  border: 2px solid blue;
+  box-shadow: 2px 2px 2px blue;
+  color: blue;
+  border-radius: 20px;
+}
+
+.x.y {
+  font-size: 50px;
+  border: 2px solid magenta;
+  box-shadow: 2px 2px 2px magenta;
+  color: magenta;
+}
+
+/*# sourceMappingURL=styles.css.map */

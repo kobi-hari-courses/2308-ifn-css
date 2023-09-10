@@ -1,0 +1,22 @@
+@use "sass:color";
+
+$color-a: blue;
+$color-b: white;
+
+@for $i from 0 through 10 {
+  .clr-#{$i} {
+    background-color: color.mix($color-a, $color-b, $i * 10%);
+  }
+}
+
+:root {
+  @for $i from 0 through 10 {
+    --p-#{$i}: #{color.mix($color-a, $color-b, $i * 10%)};
+  }
+}
+
+.card {
+    background: var(--p-2);
+    color: var(--p-8);
+    border: 2px solid var(--p-10);
+}

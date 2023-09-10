@@ -1,0 +1,14 @@
+@use "sass:list";
+
+$list-1: (a, b, c, d, e);
+$list-2: (6, 7, 8, 9);
+
+$my-list: (1p solid red);
+
+$list-1: list.append($list-1, 10);
+
+@debug list.set-nth($list-1, 3, 10);
+
+.x {
+    border: $my-list;
+}
